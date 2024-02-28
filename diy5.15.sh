@@ -31,7 +31,8 @@ git clone https://github.com/gngpp/luci-theme-neobird.git package/luci-theme-neo
 find ./ | grep Makefile | grep mosdns | xargs rm -f
 # git clone https://github.com/firkerword/openwrt-mos.git package/openwrt-mos
 # git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
-git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+# git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 # find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 # git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/passwall
@@ -54,4 +55,5 @@ git clone https://github.com/pymumu/openwrt-smartdns.git package/openwrt-smartdn
 # git clone https://github.com/linkease/istore-ui.git package/istore-ui
 svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/adguardhome
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+# svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
