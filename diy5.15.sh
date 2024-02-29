@@ -60,6 +60,7 @@ git clone https://github.com/gngpp/luci-theme-neobird.git package/luci-theme-neo
 
 # mosdns
 # git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 
