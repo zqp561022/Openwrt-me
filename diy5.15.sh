@@ -48,8 +48,9 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
 # git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
 git clone https://github.com/fw876/helloworld.git package/ssr
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
-git clone -b luci-smartdns-dev https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
-# git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+# git clone -b luci-smartdns-dev https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 # git clone -b master https://github.com/vernesong/OpenClash.git package/OpenClash
 merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
 
