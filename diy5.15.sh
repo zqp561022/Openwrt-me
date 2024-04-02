@@ -30,7 +30,7 @@ function drop_package(){
 rm -rf package/custom; mkdir package/custom
 
 # Add a feed source
-# 添加额外插件
+# 添加源
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
