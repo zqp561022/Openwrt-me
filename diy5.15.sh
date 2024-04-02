@@ -40,6 +40,7 @@ rm -rf package/custom; mkdir package/custom
 # git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 # git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
+git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
 
 #科学上网
 # git clone https://github.com/immortalwrt/homeproxy.git package/luci-app-homeproxy
