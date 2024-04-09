@@ -15,13 +15,20 @@
 #============================================================
 sed -i '/DTS_DIR:=$(LINUX_DIR)/a\BUILD_DATE_PREFIX := $(shell date +'%F')' ./include/image.mk
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(BUILD_DATE_PREFIX)-/g' ./include/image.mk
+
+# 自定义固件版本名称
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt '/DISTRIB_DESCRIPTION='OpenWrt-me '/g" ./package/lean/default-settings/files/zzz-default-settings
+
+#修改默认主机名
 sed -i "s/hostname='OpenWrt'/hostname='OpenWrt-me'/g" ./package/base-files/files/bin/config_generate
+
+#修改默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-opentomcat/g' ./feeds/luci/collections/luci/Makefile
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i 's/luci-theme-bootstrap/luci-theme-opentomcat/g' ./feeds/luci/collections/luci/Makefile
+
 
 # 移除要替换的包
 # rm -rf ./feeds/luci/applications/luci-app-qbittorrent
